@@ -1,9 +1,26 @@
-# ZTWaterFlowLayout
+# ZTWaterFlowLayout（自定义瀑布流布局）
+支持瀑布流列表每个cell行列宽高的自定义实现，头尾视图自定义，列表背景色的自定义
 
-[![CI Status](https://img.shields.io/travis/sacrifice123/ZTWaterFlowLayout.svg?style=flat)](https://travis-ci.org/sacrifice123/ZTWaterFlowLayout)
-[![Version](https://img.shields.io/cocoapods/v/ZTWaterFlowLayout.svg?style=flat)](https://cocoapods.org/pods/ZTWaterFlowLayout)
-[![License](https://img.shields.io/cocoapods/l/ZTWaterFlowLayout.svg?style=flat)](https://cocoapods.org/pods/ZTWaterFlowLayout)
-[![Platform](https://img.shields.io/cocoapods/p/ZTWaterFlowLayout.svg?style=flat)](https://cocoapods.org/pods/ZTWaterFlowLayout)
+# 用法简介
+  通过代理方法设置各个必要和可选参数，cell的高度是必选设置，其它参数可以选择设置，如不设置有默认数值。
+## ZTWaterFlowLayoutDelegate
+ @required
+- (CGFloat)waterflowLayout:(ZTWaterFlowLayout *)waterflowLayout heightForItemAtIndex:(NSUInteger)index itemWidth:(CGFloat)itemWidth;//每个item的高度
+
+@optional
+- (CGFloat)columnCountInWaterflowLayout:(ZTWaterFlowLayout *)waterflowLayout;//列数
+
+- (CGFloat)columnMarginInWaterflowLayout:(ZTWaterFlowLayout *)waterflowLayout;//列间距 
+
+- (CGFloat)rowMarginInWaterflowLayout:(ZTWaterFlowLayout *)waterflowLayout;//行间距 
+
+- (UIEdgeInsets)edgeInsetsInWaterflowLayout:(ZTWaterFlowLayout *)waterflowLayout;//边缘间距
+
+- (CGFloat)headerHeightInWaterflowLayout:(ZTWaterFlowLayout *)waterflowLayout;//头视图高度
+
+- (CGFloat)footerHeightInWaterflowLayout:(ZTWaterFlowLayout *)waterflowLayout;//尾视图高度
+
+- (UIColor *)sectionBackgroundColorInWaterflowLayout:(ZTWaterFlowLayout *)waterflowLayout;//分组列表背景色
 
 ## Example
 
