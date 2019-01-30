@@ -21,9 +21,15 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
+		7824B66DB3EFA313B1750108 /* libPods-ZTWaterFlowLayout_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E36E336E1C6B10B95371FB /* libPods-ZTWaterFlowLayout_Example.a */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		9630FEA360D51C4ECCEA92BF /* Pods_ZTWaterFlowLayout_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A74ABB8C02FB0040C650CFB /* Pods_ZTWaterFlowLayout_Tests.framework */; };
-		AF06DAA57239E5332FCA09DB /* Pods_ZTWaterFlowLayout_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9247786DD6533CC58657E1F0 /* Pods_ZTWaterFlowLayout_Example.framework */; };
+		8D8E1FB724FEC6C4F0390049 /* libPods-ZTWaterFlowLayout_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B23822D1E29E81CF4B602B52 /* libPods-ZTWaterFlowLayout_Tests.a */; };
+		E6BE8CAF220185BF00366895 /* WaterFlowFootView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6BE8CA6220185BE00366895 /* WaterFlowFootView.xib */; };
+		E6BE8CB0220185BF00366895 /* WaterFlowTestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6BE8CA7220185BE00366895 /* WaterFlowTestCell.xib */; };
+		E6BE8CB1220185BF00366895 /* WaterFlowFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6BE8CAA220185BE00366895 /* WaterFlowFootView.m */; };
+		E6BE8CB2220185BF00366895 /* WaterFlowTestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6BE8CAC220185BE00366895 /* WaterFlowTestCell.m */; };
+		E6BE8CB3220185BF00366895 /* WaterFlowHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6BE8CAD220185BF00366895 /* WaterFlowHeadView.m */; };
+		E6BE8CB4220185BF00366895 /* WaterFlowHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6BE8CAE220185BF00366895 /* WaterFlowHeadView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,9 +44,8 @@
 
 /* Begin PBXFileReference section */
 		2974938A332A7DDE20F52FFA /* Pods-ZTWaterFlowLayout_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZTWaterFlowLayout_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ZTWaterFlowLayout_Tests/Pods-ZTWaterFlowLayout_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		3773EA0E9512D71428D698B6 /* ZTWaterFlowLayout.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZTWaterFlowLayout.podspec; path = ../ZTWaterFlowLayout.podspec; sourceTree = "<group>"; };
-		3B88557A1D19E45C8D2CBF19 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		5A74ABB8C02FB0040C650CFB /* Pods_ZTWaterFlowLayout_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZTWaterFlowLayout_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3773EA0E9512D71428D698B6 /* ZTWaterFlowLayout.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZTWaterFlowLayout.podspec; path = ../ZTWaterFlowLayout.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3B88557A1D19E45C8D2CBF19 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ZTWaterFlowLayout_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZTWaterFlowLayout_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,9 +68,19 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		728A0DAAB664EDC58778173A /* Pods-ZTWaterFlowLayout_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZTWaterFlowLayout_Example.debug.xcconfig"; path = "Target Support Files/Pods-ZTWaterFlowLayout_Example/Pods-ZTWaterFlowLayout_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		913A833386CD8A090CC31A76 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		9247786DD6533CC58657E1F0 /* Pods_ZTWaterFlowLayout_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZTWaterFlowLayout_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		913A833386CD8A090CC31A76 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		B23822D1E29E81CF4B602B52 /* libPods-ZTWaterFlowLayout_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZTWaterFlowLayout_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0E36E336E1C6B10B95371FB /* libPods-ZTWaterFlowLayout_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZTWaterFlowLayout_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D38EA060D8FC4DF8C45146A5 /* Pods-ZTWaterFlowLayout_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZTWaterFlowLayout_Example.release.xcconfig"; path = "Target Support Files/Pods-ZTWaterFlowLayout_Example/Pods-ZTWaterFlowLayout_Example.release.xcconfig"; sourceTree = "<group>"; };
+		E6BE8CA6220185BE00366895 /* WaterFlowFootView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaterFlowFootView.xib; sourceTree = "<group>"; };
+		E6BE8CA7220185BE00366895 /* WaterFlowTestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaterFlowTestCell.xib; sourceTree = "<group>"; };
+		E6BE8CA8220185BE00366895 /* WaterFlowHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterFlowHeadView.h; sourceTree = "<group>"; };
+		E6BE8CA9220185BE00366895 /* WaterFlowTestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterFlowTestCell.h; sourceTree = "<group>"; };
+		E6BE8CAA220185BE00366895 /* WaterFlowFootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFlowFootView.m; sourceTree = "<group>"; };
+		E6BE8CAB220185BE00366895 /* WaterFlowFootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaterFlowFootView.h; sourceTree = "<group>"; };
+		E6BE8CAC220185BE00366895 /* WaterFlowTestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFlowTestCell.m; sourceTree = "<group>"; };
+		E6BE8CAD220185BF00366895 /* WaterFlowHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaterFlowHeadView.m; sourceTree = "<group>"; };
+		E6BE8CAE220185BF00366895 /* WaterFlowHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WaterFlowHeadView.xib; sourceTree = "<group>"; };
 		E9BCC7033F9D9AB4ECE19414 /* Pods-ZTWaterFlowLayout_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZTWaterFlowLayout_Tests.release.xcconfig"; path = "Target Support Files/Pods-ZTWaterFlowLayout_Tests/Pods-ZTWaterFlowLayout_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -77,7 +92,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				AF06DAA57239E5332FCA09DB /* Pods_ZTWaterFlowLayout_Example.framework in Frameworks */,
+				7824B66DB3EFA313B1750108 /* libPods-ZTWaterFlowLayout_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +103,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				9630FEA360D51C4ECCEA92BF /* Pods_ZTWaterFlowLayout_Tests.framework in Frameworks */,
+				8D8E1FB724FEC6C4F0390049 /* libPods-ZTWaterFlowLayout_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,7 +118,6 @@
 				2974938A332A7DDE20F52FFA /* Pods-ZTWaterFlowLayout_Tests.debug.xcconfig */,
 				E9BCC7033F9D9AB4ECE19414 /* Pods-ZTWaterFlowLayout_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -135,8 +149,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				9247786DD6533CC58657E1F0 /* Pods_ZTWaterFlowLayout_Example.framework */,
-				5A74ABB8C02FB0040C650CFB /* Pods_ZTWaterFlowLayout_Tests.framework */,
+				D0E36E336E1C6B10B95371FB /* libPods-ZTWaterFlowLayout_Example.a */,
+				B23822D1E29E81CF4B602B52 /* libPods-ZTWaterFlowLayout_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -144,6 +158,7 @@
 		6003F593195388D20070C39A /* Example for ZTWaterFlowLayout */ = {
 			isa = PBXGroup;
 			children = (
+				E6BE8CA5220185AC00366895 /* demo */,
 				6003F59C195388D20070C39A /* ZTAppDelegate.h */,
 				6003F59D195388D20070C39A /* ZTAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -197,6 +212,22 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		E6BE8CA5220185AC00366895 /* demo */ = {
+			isa = PBXGroup;
+			children = (
+				E6BE8CAB220185BE00366895 /* WaterFlowFootView.h */,
+				E6BE8CAA220185BE00366895 /* WaterFlowFootView.m */,
+				E6BE8CA6220185BE00366895 /* WaterFlowFootView.xib */,
+				E6BE8CA8220185BE00366895 /* WaterFlowHeadView.h */,
+				E6BE8CAD220185BF00366895 /* WaterFlowHeadView.m */,
+				E6BE8CAE220185BF00366895 /* WaterFlowHeadView.xib */,
+				E6BE8CA9220185BE00366895 /* WaterFlowTestCell.h */,
+				E6BE8CAC220185BE00366895 /* WaterFlowTestCell.m */,
+				E6BE8CA7220185BE00366895 /* WaterFlowTestCell.xib */,
+			);
+			name = demo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -208,7 +239,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				1E6C956E8002548E03269B04 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -280,7 +310,10 @@
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				E6BE8CAF220185BF00366895 /* WaterFlowFootView.xib in Resources */,
+				E6BE8CB4220185BF00366895 /* WaterFlowHeadView.xib in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
+				E6BE8CB0220185BF00366895 /* WaterFlowTestCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,42 +328,16 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1E6C956E8002548E03269B04 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ZTWaterFlowLayout_Example/Pods-ZTWaterFlowLayout_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ZTWaterFlowLayout/ZTWaterFlowLayout.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZTWaterFlowLayout.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZTWaterFlowLayout_Example/Pods-ZTWaterFlowLayout_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7E2D4639425DE685EECCDF39 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			inputFileListPaths = (
 			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ZTWaterFlowLayout_Example-checkManifestLockResult.txt",
 			);
@@ -344,15 +351,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-ZTWaterFlowLayout_Tests-checkManifestLockResult.txt",
 			);
@@ -368,6 +371,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6BE8CB1220185BF00366895 /* WaterFlowFootView.m in Sources */,
+				E6BE8CB2220185BF00366895 /* WaterFlowTestCell.m in Sources */,
+				E6BE8CB3220185BF00366895 /* WaterFlowHeadView.m in Sources */,
 				6003F59E195388D20070C39A /* ZTAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* ZTViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
